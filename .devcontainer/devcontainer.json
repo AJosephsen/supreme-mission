@@ -1,0 +1,9 @@
+{
+  "name": "Azure Bicep Dev",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/azure-cli:1": {},
+    "ghcr.io/devcontainers/features/bicep:1": {}
+  },
+  "postCreateCommand": "az bicep upgrade"
+}
