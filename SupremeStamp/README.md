@@ -1,1 +1,3 @@
-This is for trying out deploying stuff to azure
+# SupremeStamp
+
+This folder contains Bicep templates and deployment scripts for Azure.
