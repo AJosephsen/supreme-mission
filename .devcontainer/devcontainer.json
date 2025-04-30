@@ -7,11 +7,12 @@
 	"features": {
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
 		"ghcr.io/devcontainers/features/powershell:1": {},
+		"ghcr.io/azure/azure-dev/azd:latest": {}
 	},
 
 	"hostRequirements": {
-		"cpus": 8,
-		"memory": "32gb",
+		"cpus": 4,
+		"memory": "8gb",
 		"storage": "64gb"
 	},
 
@@ -32,7 +33,15 @@
 			"extensions": [
 				"ms-dotnettools.csdevkit",
 				"GitHub.copilot-chat",
-				"GitHub.copilot"
+				"GitHub.copilot",
+				"GitHub.vscode-github-actions",
+                "ms-azuretools.azure-dev",
+                "ms-azuretools.vscode-azurefunctions",
+                "ms-azuretools.vscode-bicep",
+                "ms-azuretools.vscode-docker"
+                // Include other VSCode language extensions if needed
+                // Right click on an extension inside VSCode to add directly to devcontainer.json, or copy the extension ID
+
 			]
 		}
 	}
